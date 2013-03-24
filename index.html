@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MtG Rules Search</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <link rel="stylesheet" href="static/mtg.css" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="static/mtg.js"></script>
+    </head>
+
+    <body>
+        <div id="left">
+            <img src="static/title4c.png" id="title_img" alt="MtG Rules Search">
+            <input type="text" id="search" onkeypress="return maybeSubmit(event);" placeholder="Search">
+        </div>
+        <div id="right">
+        </div>
+        <script type="text/javascript">
+            xml_http_post("/", "mana symbols", test_handle);
+        </script>
+    </body>
+</html>

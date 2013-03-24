@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('OpenSans-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('OpenSansLight-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('OpenSans-Semibold.woff') format('woff');
+    }
+
+::selection {
+    background: rgb(184, 15, 40);
+}
+
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#left {
+    vertical-align: top;
+    display: inline-block;
+    width: 300px;
+
+    margin-left: 55px;
+    margin-top: 50px;
+
+    position: fixed;
+}
+
+#title_img {
+    width: 300px;
+    height: 175px;
+}
+
+#search {
+    margin-top: 55px;
+    margin-left: 3px;
+    width: 295px;
+    border-color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+
+#right {
+    display: inline-block;
+
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.section{
+    width: 600px;
+    margin-bottom: 15px;
+
+    text-align: justify;
+}
+
+.subsection{
+    padding: 5px;
+    padding-bottom: 0px;
+    margin: 5px;
+
+    border-color: rgba(0, 0, 0, 0.2);
+    border-left-style: solid;
+    border-width: 1px;
+}
+
+.rule{
+    padding: 5px;
+    padding-bottom: 0em;
+    padding-top: 0px;
+    margin: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+
+    border-color: rgba(0, 0, 0, 0.2);
+    border-left-style: solid;
+    border-width: 1px;
+}
+
+.rule:hover{
+    border-color: rgba(184, 15, 40, 0.6);
+}
+
+.ruleno {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.sectionno {
+    display: inline-block;
+    font-size: 15px;
+}
+
+#mana_img {
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    position: relative;
+}
+
+#glossed {
+    display: inline-block;
+    font-style: italic;
+}
+
+b::selection {
+    color: white;
+}
+
+b {
+    color: rgb(184, 15, 40);
+}
+
+.glossary {
+    position: absolute;
+    left: 1030px;
+    width: 250px;
+    font-size: 12px;
+    /*text-align: justify;*/
+}
+
+#glossary_mana_img {
+    width: 13px;
+    height: 13px;
+    top: 2px;
+    position: relative;
+}
